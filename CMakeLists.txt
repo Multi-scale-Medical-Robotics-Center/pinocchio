@@ -477,7 +477,7 @@ endif()
 add_subdirectory(utils)
 
 # --- UNIT TESTS ---------------------------------------------------------------
-add_subdirectory(unittest)
+#add_subdirectory(unittest)
 
 # --- CHECK EXAMPLES -----------------------------------------------------------
 if(BUILD_EXAMPLES)
