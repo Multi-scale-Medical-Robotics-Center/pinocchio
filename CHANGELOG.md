@@ -10,6 +10,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [3.9.0] - 2026-01-05
+
 ### Added
 - Add pixi-build support ([#2802](https://github.com/stack-of-tasks/pinocchio/pull/2802))
 - Python: add overload of `BaseVisualizer::play()` to `VisualizerPythonVisitor` ([#2796](https://github.com/stack-of-tasks/pinocchio/pull/2796))
@@ -33,6 +35,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Fix `appendModel` issues ([#2807](https://github.com/stack-of-tasks/pinocchio/pull/2807)):
   - Bad inertia transformation when multiple frame with inertia have non null placement
   - Undefined behavior when more than two frame was attached to universe
+- Simplify and fix DAE loading in Viser visualizer ([#2830](https://github.com/stack-of-tasks/pinocchio/pull/2830))
 
 ### Removed
 - Remove CMake < 3.22 details ([#2790](https://github.com/stack-of-tasks/pinocchio/pull/2790))
@@ -1221,7 +1224,8 @@ The model can either be parsed from a URDF format or be created by appendending 
         • Fixed (concatenation of two consecutive bodies)
 
 
-[Unreleased]: https://github.com/stack-of-tasks/pinocchio/compare/v3.8.0...HEAD
+[Unreleased]: https://github.com/stack-of-tasks/pinocchio/compare/v3.9.0...HEAD
+[3.9.0]: https://github.com/stack-of-tasks/pinocchio/compare/v3.8.0...v3.9.0
 [3.8.0]: https://github.com/stack-of-tasks/pinocchio/compare/v3.7.0...v3.8.0
 [3.7.0]: https://github.com/stack-of-tasks/pinocchio/compare/v3.6.0...v3.7.0
 [3.6.0]: https://github.com/stack-of-tasks/pinocchio/compare/v3.5.0...v3.6.0
